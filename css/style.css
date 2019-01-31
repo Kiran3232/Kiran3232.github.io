@@ -39,8 +39,14 @@ font-family: 'Kalam';
 /*JUMBOTRON*/
 .jumbotron {
   height: 100vh; /*height to 100% of view height*/
-  background: #31b0d5; /*background color to blue*/
-  margin-bottom: 0; /*no bottom margin*/
+
+  
+background-image:url('background.jpeg');
+background-size: cover;
+background-position: center;
+
+
+
 
   display: flex;
   flex-direction: column;
@@ -108,8 +114,10 @@ font-family: 'Kalam';
   display: flex;
 }
 
-.white {
-  background: white;
+.all {
+background-image:url('about.jpg');
+background-size: cover;
+background-position: center;
 }
 
 .side-content {
@@ -117,6 +125,7 @@ font-family: 'Kalam';
 }
 
 .main-content {
+
   flex: 0 0 66.6%;
   margin-top: 2rem;
   margin-bottom: 3rem;
@@ -148,23 +157,25 @@ h2 {
 }
 
 .content-body {
+
   line-height: 1.5;
-  color: rgba(0,0,0,.75);
+  color: white;
 }
 
 /*EDUCATION*/
 .card {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  border: 1px solid rgba(0,0,0,.125);
+  background-color: transparent;
+  border: 1px solid ;
+border-color : grey;
   border-radius: .25rem;
   margin-bottom: 30px;
 }
 
 .card-header {
   padding: .75rem 1.25rem;
-  background-color: white;
+  background-color: transparent;
   border-bottom: 1px solid rgba(0,0,0,.075);
   border-top-left-radius: .25rem;
   border-top-right-radius: .25rem;
@@ -175,10 +186,10 @@ h2 {
   flex: 1 1 auto;
 }
 
-h4 {
+h3 {
   margin: 0;
   font-weight: 400;
-  color: grey;
+  color: white;
 }
 
 .job-title {
@@ -189,8 +200,9 @@ h4 {
 .project-card {
   display: flex;
   flex-direction: row;
-  background-color: white;
-  border: 1px solid rgba(0,0,0,.125);
+  background-color: transparent;
+  border: 1px solid ;
+border-color : grey;
   border-radius: 5px;
   margin-bottom: 30px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
@@ -234,7 +246,7 @@ h4 {
 
 /*CONTACT*/
 .blue {
-  background: #3498db;
+  
   text-align: center;
 }
 
@@ -242,8 +254,7 @@ h4 {
   max-width: 500px;
   margin: 0 auto;
 }
-h3{
-	color : white;
+
 }
 .contact input, .contact textarea {
   display: block;
@@ -262,9 +273,26 @@ h3{
   height: 150px;
   resize: none;
 }
+.imag {
 
+  display: flex;
+}
 
+.imagc {
+  flex: 50%;
+  padding: 5px;
+}
 
 .white-text {
   color: white;
+}
+
+.con {
+background-image:url('contact.jpg') ;
+background-size: cover;
+background-position : 
+}
+
+.foot {
+font-color: black;
 }
