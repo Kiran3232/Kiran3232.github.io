@@ -12,18 +12,18 @@ h1{
 font-family: 'Kalam';
  text-shadow: 2px 2px #ff0000;
 }
-/*NAVBAR*/
+
 .navbar {
-  background-color: #31b0d5;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+  background-color: grey;
+  position: fixed; 
+  top: 0; 
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .navbar a {
-  font-weight: 200;
+  font-weight: 300;
   color: white;
   padding: 14px 16px;
   text-decoration: none;
@@ -36,9 +36,8 @@ font-family: 'Kalam';
   visibility: hidden;
 }
 
-/*JUMBOTRON*/
 .jumbotron {
-  height: 100vh; /*height to 100% of view height*/
+  height: 100vh; 
 
   
 background-image:url('background.jpeg');
@@ -53,7 +52,7 @@ background-position: center;
 }
 
 .jumbotron-text {
-  /*TAGLINE UNDER NAME*/
+ 
   font-weight: 400;
   font-size: 2em;
   color: white;
@@ -62,7 +61,7 @@ background-position: center;
 }
 
 .jumbotron-text h1 {
-  /*YOUR NAME*/
+  
   text-transform: uppercase;
   font-weight: 800;
   font-size: 3em;
@@ -73,7 +72,7 @@ background-position: center;
   margin: 0;
 }
 
-/*SOCIAL LINKS*/
+
 .ul-social {
   text-align: center;
   padding-left: 0;
@@ -90,7 +89,6 @@ background-position: center;
   padding: 20px;
 }
 
-/*ARROW LINK*/
 #down-arrow {
   /*position: absolute;
   width: 100%;*/
@@ -103,9 +101,8 @@ background-position: center;
   color: white;
 }
 
-/*CONTENT*/
 .container {
-  /*sets up flexbox*/
+  
   display: flex;
   flex-direction: column;
 }
@@ -162,7 +159,7 @@ h2 {
   color: white;
 }
 
-/*EDUCATION*/
+
 .card {
   display: flex;
   flex-direction: column;
@@ -196,7 +193,7 @@ h3 {
   float: right;
 }
 
-/*PROJECTS*/
+
 .project-card {
   display: flex;
   flex-direction: row;
@@ -227,7 +224,6 @@ border-color : grey;
   flex-direction: column;
 }
 
-/*SKILLS*/
 .ul-skills {
   text-align: center;
   padding-left: 0;
@@ -244,7 +240,7 @@ border-color : grey;
   font-size: 1.2em;
 }
 
-/*CONTACT*/
+
 .blue {
   
   text-align: center;
