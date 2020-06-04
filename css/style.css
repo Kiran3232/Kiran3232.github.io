@@ -60,6 +60,9 @@ ul {
 .insta {
   color : #3F729B;
 }
+.certifications {
+  border-top: solid 1px #DEDEDE;
+}
 
 @media screen and (max-width : 767px) {
   .outer-card {
