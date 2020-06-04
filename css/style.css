@@ -71,4 +71,7 @@ ul {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  .intro-heading {
+    font-size : 80px;
+  }
 }
