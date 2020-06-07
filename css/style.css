@@ -21,7 +21,27 @@
   font-family: 'Kalam', sans-serif;
   font-weight: 800;
   font-size: 96px;
+  animation-name: zoomIn96;
+  animation-duration: 2s;
   text-shadow: 2px 2px #ff0000;
+}
+
+@keyframes zoomIn96 {
+  from {
+    font-size: 0px;
+  }
+  to {
+    font-size: 96px;
+  }
+}
+
+@keyframes zoomIn80 {
+  from {
+    font-size: 0px;
+  }
+  to {
+    font-size: 80px;
+  }
 }
 
 .social-links {
@@ -116,5 +136,7 @@ ul {
   }
   .intro-heading {
     font-size: 80px;
+    animation-name: zoomIn80;
+    animation-duration: 2s;
   }
 }
