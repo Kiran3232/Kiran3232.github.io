@@ -107,6 +107,14 @@
   border-radius: 0px !important;
 }
 
+.card-body {
+  background-color: #F6F6F6;
+}
+
+.card-header {
+  background-color: #D3D3D3 !important;
+}
+
 .btn {
   border-radius: 0px !important;
 }
@@ -125,6 +133,14 @@ ul {
 
 .certifications {
   border-top: solid 1px #DEDEDE;
+}
+
+.shadow {
+  box-shadow: 0 2px 4px 0 rgba(44, 42, 41, .2);
+}
+
+.shadow:hover {
+  box-shadow: 0 2px 4px 0 rgba(44, 42, 41, .5) !important;
 }
 
 @media screen and (max-width: 767px) {
