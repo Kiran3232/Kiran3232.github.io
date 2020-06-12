@@ -22,6 +22,17 @@
   text-shadow: 2px 2px #ff0000;
 }
 
+.full-cover {
+  height: 93vh;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+}
+
 @keyframes zoomIn96 {
   from {
     font-size: 0px;
@@ -210,5 +221,8 @@ ul {
   .no-padding {
     padding-left: 0px !important;
     padding-right: 0px !important;
+  }
+  .full-cover {
+    height: 90vh;
   }
 }
