@@ -17,7 +17,7 @@
 <body>
   <div class="entire-body mx-auto">
     <!-- Header Starts -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand">KIRAN VERGHESE</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,12 +44,12 @@
 
     <!-- About Section Starts -->
     <div class="intro shadow" id="intro">
-      <div class="jumbotron shadow">
+      <div class="jumbotron shadow vh-100">
         <div class="intro-section pt-4 text-center">
           <h1 class="intro-heading">Kiran Verghese</h1>
-          <h3>Aspiring Developer from Chennai, IN</h3>
+          <h3 class="pt-4 fade-in">Aspiring Developer from Chennai, IN</h3>
         </div>
-        <div class="social-media text-center pt-3">
+        <div class="social-media text-center pt-3 fade-in">
           <ul>
             <li class="social-links">
               <a class="social" href="https://github.com/Kiran3232" target="_blank"><i class="fab fa-github"></i></a>
@@ -81,9 +81,9 @@
     <!-- About Section Ends -->
 
     <!-- Main Div Starts Here -->
-    <div class="main-content py-4" id="main">
+    <div class="main-content py-4 py-lg-5" id="main">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 to-slide-from-left">
           <div class="list-group shadow" id="list-tab" role="tablist">
             <a class="list-group-item list-group-item-action active" id="" data-toggle="list" href="#about-me"
               role="tab">About Me</a>
@@ -102,10 +102,10 @@
             <div class="tab-pane fade show active about-me" id="about-me" role="tabpanel"
               aria-labelledby="list-home-list">
               <div class="row">
-                <div class="col-lg-6 no-padding">
+                <div class="col-lg-6 no-padding to-fade-in">
                   <img src="assets/Kiran.jpg" alt="" class="img-fluid">
                 </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 no-padding">
+                <div class="col-lg-6 pt-4 pt-lg-0 no-padding to-slide-from-right">
                   <p>Hey There! I'm Kiran Verghese. I'm 22 years old and I currently live in Chennai.</p>
                   <p>I've completed my Bachelors degree in Information Technology (IT) at Velammal Engineering College.
                     I
@@ -192,7 +192,7 @@
     <!-- Main Div Ends Here -->
 
     <!-- Certifications Start Here -->
-    <div class="certifications py-5" id="certifications">
+    <div class="certifications py-4 py-lg-5 to-slide-from-bottom" id="certifications">
       <h2 class="col-md-12">Certifications</h2>
       <div class="row pt-3">
         <div class="col-md-6 col-lg-4">
@@ -238,6 +238,7 @@
       $(this).addClass("active");
     });
   </script>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>
