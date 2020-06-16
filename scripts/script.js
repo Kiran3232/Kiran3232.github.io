@@ -45,27 +45,21 @@ var allFromLeft = $(".to-slide-from-left");
 
 win.scroll(function (event) {
     $(".to-slide-from-right").each(function (i, el) {
-        var ele = $(el);
-        if (ele.visible(true)) {
-            ele.addClass("from-right");
-        }
+        doAction('from-right', $(el));
     });
     $(".to-slide-from-left").each(function (i, el) {
-        var ele = $(el);
-        if (ele.visible(true)) {
-            ele.addClass("from-left");
-        }
+        doAction('from-left', $(el));
     });
     $(".to-fade-in").each(function (i, el) {
-        var ele = $(el);
-        if (ele.visible(true)) {
-            ele.addClass("fade-in");
-        }
+        doAction('fade-in', $(el));
     });
     $(".to-slide-from-bottom").each(function (i, el) {
-        var ele = $(el);
-        if (ele.visible(true)) {
-            ele.addClass("from-bottom");
-        }
+        doAction('from-bottom', $(el));
     });
 });
+
+function doAction(action, ele) {
+    if (ele.visible(true)) {
+        ele.addClass(action);
+    }
+}
