@@ -229,7 +229,7 @@ ul {
 
 @media (max-width: 991px) {
   .navbar-brand {
-    margin: 0 auto;
-    transform: translateX(-25%);
+    margin: 0 auto !important;
+    transform: translateX(-15%);
   }
 }
