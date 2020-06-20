@@ -226,3 +226,10 @@ ul {
     height: 90vh;
   }
 }
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    margin: 0 auto;
+    transform: translateX(-25%);
+  }
+}
