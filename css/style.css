@@ -3,6 +3,10 @@
   scroll-behavior: smooth;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 /* .entire-body {
   max-width: 1440px;
 } */
