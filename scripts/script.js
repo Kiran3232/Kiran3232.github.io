@@ -63,3 +63,19 @@ function doAction(action, ele) {
         ele.addClass(action);
     }
 }
+
+$(function () {
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+    var cert = document.getElementById('certifications')
+    if (cert != null) {
+        setTimeout(function () {
+            document.getElementById('certifications-nav').classList.add("active");
+        }, 200);
+    }
+    else {
+        setTimeout(function () {
+            document.getElementById('home-nav').classList.add("active");
+        }, 200);
+    }
+});
