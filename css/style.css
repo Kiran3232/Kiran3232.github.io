@@ -220,6 +220,10 @@ ul {
   margin-left: 5px;
 }
 
+.card-img-top {
+  border-bottom: 1px solid #DEDEDE;
+}
+
 @media screen and (max-width: 767px) {
   .outer-card {
     padding-left: 0px;
