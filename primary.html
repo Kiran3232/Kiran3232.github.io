@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .card-text {
+            margin-bottom: 2px;
+            /* text-align: right; */
+        }
+
+        .card {
+            width: 100%;
+            /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .card-img-small {
+            width: 60px;
+        }
+
+        .card-img {
+            max-width: 140px;
+        }
+
+        .footer {
+            height: 50px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .main {
+            height: calc(100% - 50px);
+            overflow: auto;
+        }
+
+        .btn {
+            border-radius: 0;
+        }
+
+        .abs-img {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 20px;
+        }
+
+
+        .font-weight-bold {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body class="h-100 bg-light">
+
+    <div class="h-100">
+        <div class="main">
+            <div class="form-row mx-0 p-1">
+                <div class="col-12 py-2">
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-4 my-auto px-2 text-center border-right">
+                                <img src="bill.svg" class="card-img" alt="...">
+                            </div>
+                            <div class="col-8 border-left">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">#336600</h4>
+                                    <!-- <div class="form-row">
+                                <p class="card-text col-6">Total: </p>
+                                <p class="card-text font-weight-bold col-6">689.90</p>
+                                <p class="card-text col-6">Paid: </p>
+                                <p class="card-text font-weight-bold col-6">689.90</p>
+                                <p class="card-text col-6">Due: </p>
+                                <p class="card-text font-weight-bold col-6">689.90</p>
+                            </div> -->
+                                    <p class="card-text text-center">Due: 689.90</p>
+                                    <p class="card-text text-center">25 Jan, 2021</p>
+                                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 py-2">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body text-center">
+                            <img src="payment.svg" class="card-img-small" alt="...">
+                            <h5 class="pt-3">Total: 689.90</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 py-2">
+                    <div class="card bg-success text-white" data-toggle="modal" data-target="#exampleModalScrollable">
+                        <div class="card-body text-center">
+                            <img src="tick.svg" class="card-img-small" alt="...">
+                            <img src="info-button.svg" class="abs-img" alt="">
+                            <h5 class="pt-3">Paid: 689.90 (5)</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 py-2">
+                    <div class="card bg-warning text-white">
+                        <div class="card-body text-center">
+                            <img src="pay.svg" class="card-img-small" alt="...">
+                            <h5 class="pt-3">Pending: 689.90</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="row no-gutters h-100">
+                <div class="col-6">
+                    <button class="btn btn-success w-100 h-100">
+                        Equal Split
+                    </button>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-danger w-100 h-100">
+                        Custom Split
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Previous Payments</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-row text-center">
+                        <div class="col-4 py-2">
+                            <div class="card bg-success text-white">
+                                <p class="font-weight-bold py-1">60.00</p>
+                            </div>
+                        </div>
+                        <div class="col-4 py-2">
+                            <div class="card bg-success text-white">
+                                <p class="font-weight-bold py-1">125.40</p>
+                            </div>
+                        </div>
+                        <div class="col-4 py-2">
+                            <div class="card bg-success text-white">
+                                <p class="font-weight-bold py-1">99.45</p>
+                            </div>
+                        </div>
+                        <div class="col-4 py-2">
+                            <div class="card bg-success text-white">
+                                <p class="font-weight-bold py-1">12.80</p>
+                            </div>
+                        </div>
+                        <div class="col-4 py-2">
+                            <div class="card bg-success text-white">
+                                <p class="font-weight-bold py-1">23.32</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
